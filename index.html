@@ -6,17 +6,28 @@
 	
     <title>Soi Ếch TV. Trang web soi ếch số 1 Đông Nam Á</title>
 	<div class="head">
-	<h1>Soi Ếch VN</h1>
-    <h4  style :"font-size:10px" ><sup>Website soi ếch số 1 Việt Nam!</sup></h4>
+	<h1>Soi Ếch VN</h1>                          
+    <h4  style :"font-size= 10px" ><sup>Website soi ếch số 1 Việt Nam!</sup></h4>
+	<nav>
+        <a href="#about">Giới thiệu</a>
+        <a href="#gallery">Bộ sưu tập</a>
+        <a href="#regions">Ếch các châu lục</a>
+        <a href="#contact">Liên hệ</a>
+    </nav>
     </div>	
 	<style>
-	.head {     
-            background-color: #FFA500;
-	        
+	.head { 
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #FFA500;	        
             color: white;
             padding: 1px 20px;
             text-align: left;	
 			align-items: center;
+			display: flex
+			z-index: 999999;
         }
 	.head h1 {
 	        font-size : 60px;
@@ -33,6 +44,9 @@
             padding: 0;
             background-color: #0A0A0A;
             color: #FFFFFF;
+			margin-top : 80px;
+			z-index : 1;
+			padding-top: 100px;
         }
         .header {
               background-image: url('https://i.pinimg.com/736x/02/5b/cf/025bcf9a30cdc91ff066c451fe972f1e.jpg'); 
@@ -46,15 +60,17 @@
               align-items: center;
         }      
         nav {
-            text-align: left-side;
-            padding: 1px 2px;
+            position: fixed;
+            top: 80px;
+            right: 80px;
+            display: flex;
+            gap: 60px; 
         }
         nav a {
-            margin: 0 15px;
             text-decoration: none;
-            color: #FFA500;
+            color: white;
             font-weight: bold;
-			font-size:20px;
+			font-size: 20px;
         }
         main {
             padding: 20px;
@@ -67,12 +83,16 @@
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
             gap: 15px;
 			justify-content: start;
+			position: relative;
+			z-index:-1;
+		
 			
         }
         .frog-gallery img {
             width: 100%;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			
 			
         }
         footer {
@@ -90,12 +110,7 @@
     </header>
 	
 
-    <nav>
-        <a href="#about">Giới thiệu</a>
-        <a href="#gallery">Bộ sưu tập</a>
-        <a href="#regions">Ếch các châu lục</a>
-        <a href="#contact">Liên hệ</a>
-    </nav>
+   
 
     <main>
         <section id="about">
@@ -106,25 +121,77 @@
         <section id="gallery">
             <h2>Bộ sưu tập</h2>
             <div class="frog-gallery">
-                <img src="https://i.pinimg.com/736x/7b/13/cb/7b13cb16bb226db7edafa388939ed120.jpg " alt="Ếch 1" width="111">
-                <img src="https://i.pinimg.com/736x/e1/3f/4d/e13f4d519863cbbb1f23f65ae27827ed.jpg" alt="Ếch 2">
-                <img src="https://i.pinimg.com/736x/0d/39/b3/0d39b366d69bb4ac84c69212b8d1ee27.jpg" alt="Ếch 3">
-                <img src="https://i.pinimg.com/736x/70/00/c8/7000c86cd570b7bea9c99082d88d2a35.jpg" alt="Ếch 4">
+                
+				<div class="slider">
+                    <div class="slide">
+                      <img src="https://i.pinimg.com/736x/7b/13/cb/7b13cb16bb226db7edafa388939ed120.jpg" alt="Ảnh 1">
+                    </div>
+                   <div class="slide">
+                      <img src="https://i.pinimg.com/736x/e1/3f/4d/e13f4d519863cbbb1f23f65ae27827ed.jpg" alt="Ảnh 2">
+                    </div>
+                    <div class="slide">
+                      <img src="https://i.pinimg.com/736x/0d/39/b3/0d39b366d69bb4ac84c69212b8d1ee27.jpg" alt="Ảnh 3">
+                    </div>
+					<div class="slide">
+                      <img src="https://i.pinimg.com/474x/16/24/f5/1624f53c739eb7e15ae1879e17f268f0.jpg" alt="Ảnh 4">
+                    </div>
+					<div class="slide">
+                      <img src="https://i.pinimg.com/736x/f7/ba/68/f7ba680ba89e6e057fcb5326d11405c6.jpg" alt="Ảnh 5">
+                    </div>
+					<div class="slide">
+                      <img src="https://i.pinimg.com/736x/0a/18/19/0a1819b2e4d0594cafeacdc382aac758.jpg" alt="Ảnh 6">
+                    </div>
+					<div class="slide">
+                      <img src="https://i.pinimg.com/736x/0b/92/b0/0b92b0797b73cd29f1b3c1d86295dac8.jpg" alt="Ảnh 7">
+                    </div>
+                </div>
 				
 				
             <div class="video-row">
-                <video width="320 " autoplay loop controls><source src="https://cdn.pixabay.com/video/2023/06/05/165849-833532197_large.mp4" type="video/mp4"></video>
-                <video width="320" autoplay loop controls><source src="https://cdn.pixabay.com/video/2024/05/21/212909_tiny.mp4" type="video/mp4"></video>
-                <video width="320" autoplay loop controls><source src="https://cdn.pixabay.com/video/2022/02/03/106568-673570279_tiny.mp4" type="video/mp4"></video>
-	            <video width ="320" height ="240" autoplay loop controls><source src="https://cdn.pixabay.com/video/2023/01/31/148724-794599269_tiny.mp4" type="video/mp4"></video>
+                <video width="320 " autoplay loop muted><source src="https://cdn.pixabay.com/video/2023/06/05/165849-833532197_large.mp4" type="video/mp4"></video>
+                <video width="320" autoplay loop muted><source src="https://cdn.pixabay.com/video/2024/05/21/212909_tiny.mp4" type="video/mp4"></video>
+                <video width="320" autoplay loop muted><source src="https://cdn.pixabay.com/video/2022/02/03/106568-673570279_tiny.mp4" type="video/mp4"></video>
+	            <video width ="320" height ="240" autoplay loop muted><source src="https://cdn.pixabay.com/video/2023/01/31/148724-794599269_tiny.mp4" type="video/mp4"></video>
 	
             </div>
 
 <style>
+
 .video-row {
-    display: flex;
-    gap: 20px;
-    justify-content: right-side;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Chia thành 2 cột */
+    gap: 1px; /* Khoảng cách giữa các video */
+    justify-content: center; /* Căn giữa */
+    align-items: center;
+    max-width: 5000px;
+    margin: auto;
+}
+
+.video-row video {
+    width: 400px; /* Video tự co theo khung */
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+	height: 200px;
+	
+}
+.slider {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+}
+
+.slide {
+    display: inline-block;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 </style>
         </section>
@@ -171,6 +238,17 @@
     <footer>
         <p>&copy; 2024 Soi Ếch. Vua của các web soi ếch.</p>
     </footer>
+	<script>
+    let index = 0;
+    function nextSlide() {
+        const slides = document.querySelectorAll(".slide");
+        index = (index + 1) % slides.length;
+        slides.forEach((slide, i) => {
+            slide.style.transform = `translateX(-${index * 100}%)`;
+        });
+    }
+    setInterval(nextSlide, 3000); 
+</script>
 </body>
 </html>
 
